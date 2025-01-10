@@ -1,5 +1,8 @@
 package main
 
+// similar to Kadan algo O(n)
+// https://en.wikipedia.org/wiki/Maximum_subarray_problem
+
 func maxProduct(nums []int) int {
 	if len(nums) == 0 {
 		return 0
