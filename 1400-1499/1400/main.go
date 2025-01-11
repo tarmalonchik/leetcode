@@ -1,13 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
-func main() {
-	fmt.Println(canConstruct("qlkzenwmmnpkopu", 15))
-}
-
 func canConstruct(s string, k int) bool {
 	mg := manager{
 		mpSingle:   make(map[byte]int),
