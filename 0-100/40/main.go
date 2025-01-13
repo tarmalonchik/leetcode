@@ -1,13 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"sort"
 )
-
-func main() {
-	fmt.Println(combinationSum2([]int{1, 1}, 1))
-}
 
 func combinationSum2(candidates []int, target int) [][]int {
 	out := make(output, 0)
