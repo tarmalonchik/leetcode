@@ -7,14 +7,12 @@ type ListNode struct {
 
 func insert(root *ListNode, val int, stop *ListNode) *ListNode {
 	current := root
-
 	if val < current.Val {
 		return &ListNode{
 			Val:  val,
 			Next: current,
 		}
 	}
-
 	for {
 		if current.Next == nil || current.Next == stop {
 			if current.Next == nil {
@@ -45,10 +43,8 @@ func insertionSortList(head *ListNode) *ListNode {
 	if head == nil {
 		return nil
 	}
-
 	newHead := head
 	current := head
-
 	for {
 		if current == nil || current.Next == nil {
 			break
